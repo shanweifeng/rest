@@ -22,6 +22,11 @@ public class Application {
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
 	}
+	
+	@Bean
+	public String str(RestTemplateBuilder builder) {
+		return "ssss";
+	}
 
 	@Bean
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {

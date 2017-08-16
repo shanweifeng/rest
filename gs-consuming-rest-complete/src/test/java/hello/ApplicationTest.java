@@ -29,6 +29,9 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootTest
 public class ApplicationTest {
 	
+	//@Autowired
+	//private TestService r;
+	
 	@Autowired
 	private RestTemplate restTemplate;
 
@@ -36,7 +39,11 @@ public class ApplicationTest {
 	public void contextLoads() {
 		assertThat(restTemplate).isNotNull();
 		System.out.print("测试restfull");
-		
+	}
+	
+	@Test
+	public void strTest() {
+		//r.str();
 	}
 
 }
